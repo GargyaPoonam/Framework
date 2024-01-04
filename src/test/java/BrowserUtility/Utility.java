@@ -32,7 +32,7 @@ public class Utility {
 		
 	}
 	public static void QuitBrowser(WebDriver driver) {
-	//	driver.quit();
+		driver.quit();
 	}
 	
 	

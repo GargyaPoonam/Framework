@@ -22,17 +22,18 @@ public class CategoryPage {
 	}
 	
 	
-	@FindBy(xpath ="//span[contains(text(),'Electronics')]") WebElement Electronic;
+	@FindBy(xpath ="//*[@id='container']/div/div[1]/div/div/div/div/div[1]/div/div[1]/div/div[2]/div[1]/div/div[1]/div/div/div/div/div[1]/div[2]/div/div/span") WebElement Electronic;
 	@FindBy(xpath ="//a[normalize-space()='Gaming']") WebElement Gaming;
 	@FindBy(xpath ="//a[normalize-space()='All']") WebElement all;
-//	@FindBy(xpath="//button[text()='✕']") WebElement ClosePopup;
-	
+	@FindBy(xpath="//button[text()='✕']") WebElement ClosePopup;
+	////span[contains(text(),'Electronics')]
 	public void searchOncategory() throws InterruptedException {
-	Thread.sleep(2000);
+	//	ClosePopup.click();
+	Thread.sleep(3000);
 	Electronic.click();
-	Thread.sleep(2000);
+	Thread.sleep(3000);
 	Gaming.click();
-	Thread.sleep(2000);
+	Thread.sleep(3000);
 	all.click();
 
 

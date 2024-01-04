@@ -5,8 +5,8 @@
     <classes>
       <class name="TestCase.Search_TestCase">
         <methods>
+          <include name="SearchElectronics"/>
           <include name="setup"/>
-          <include name="searchProducts"/>
           <include name="SetupSuite"/>
           <include name="closeBrowser"/>
         </methods>

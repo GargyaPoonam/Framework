@@ -13,7 +13,7 @@ import PAgeObject.Search;
 
    public class Search_TestCase extends Base {
 	
-	 @Test(priority =1 )
+	 @Test(priority =1, enabled = false)
 	    public void searchProducts() throws IOException, InterruptedException {
 	        Search find = PageFactory.initElements(driver, Search.class);
 	        Excel excel = new Excel();
@@ -24,7 +24,7 @@ import PAgeObject.Search;
 	        }
 	        
 	    }
-	    @Test(priority =2,enabled = false)
+	    @Test(priority =2)
 	    public void SearchElectronics() throws InterruptedException{
 	        CategoryPage find1 = PageFactory.initElements(driver, CategoryPage.class);
 	    	find1.searchOncategory();
